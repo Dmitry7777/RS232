@@ -29,7 +29,7 @@ void begin(); //
 void end(); //
 void find(); //
 void findUntil(); //
-void flush
+void flush(); //
 void parseFloat(); //
 void parseInt(); //
 void peek(); //

@@ -16,8 +16,6 @@
 #define RS232_CTS
 #define RS232_RI
 
-//
-#endif
 
 class RS232{
 
@@ -53,3 +51,4 @@ protected:
 };
 
 extern RS232class;
+#endif

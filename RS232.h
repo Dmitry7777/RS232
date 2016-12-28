@@ -30,7 +30,7 @@ void end(); //
 void find(); //
 void findUntil(); //
 void flush
-void parse Float(); //
+void parseFloat(); //
 void parseInt(); //
 void peek(); //
 void print(); //

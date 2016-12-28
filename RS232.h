@@ -52,4 +52,4 @@ protected:
 
 };
 
-extern RS232_class;
+extern RS232class;

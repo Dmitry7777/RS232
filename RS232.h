@@ -16,10 +16,8 @@
 #define RS232_CTS
 #define RS232_RI
 
-#endif
 
 class RS232{
-
 public:
 //
 void available(); //
@@ -41,7 +39,6 @@ void readString(); //
 void readStringUntil(); //
 void setTimeout(); //
 void write(); //
-
 
 private:
 //

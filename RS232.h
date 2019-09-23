@@ -1,14 +1,14 @@
 #ifndef RS232_H
 #define RS232_H
 
-#define RS232_DCD INPUT
-#define RS232_RXD INPUT
-#define RS232_TXD OUTPUT
-#define RS232_DTR OUTPUT
-#define RS232_DSR INPUT
-#define RS232_RTS OUTPUT
-#define RS232_CTS INPUT
-#define RS232_RI INPUT
+#define IO_MCU_RS232_DCD INPUT
+#define IO_MCU_RS232_RXD INPUT
+#define IO_MCU_RS232_TXD OUTPUT
+#define IO_MCU_RS232_DTR OUTPUT
+#define IO_MCU_RS232_DSR INPUT
+#define IO_MCU_RS232_RTS OUTPUT
+#define IO_MCU_RS232_CTS INPUT
+#define IO_MCU_RS232_RI INPUT
 
 //#line Update
 
@@ -65,14 +65,14 @@ class RS232{
   PROCESS_RS232_CTS = CTS; //
   PROCESS_RS232_RI = RI; //
   /*Defining the pin modes of the COM-port*/
-  pinMode(DCD, RS232_DCD); //
-  pinMode(RXD, RS232_RXD); //
-  pinMode(TXD, RS232_TXD); //
-  pinMode(DTR, RS232_DTR); //
-  pinMode(DSR, RS232_DSR); //
-  pinMode(RTS, RS232_RTS); //
-  pinMode(CTS, RS232_CTS); //
-  pinMode(RI, RS232_RI); //
+  pinMode(DCD, IO_MCU_RS232_DCD); //
+  pinMode(RXD, IO_MCU_RS232_RXD); //
+  pinMode(TXD, IO_MCU_RS232_TXD); //
+  pinMode(DTR, IO_MCU_RS232_DTR); //
+  pinMode(DSR, IO_MCU_RS232_DSR); //
+  pinMode(RTS, IO_MCU_RS232_RTS); //
+  pinMode(CTS, IO_MCU_RS232_CTS); //
+  pinMode(RI, IO_MCU_RS232_RI); //
     }; //
     
     void begin(uint8_t PORT){
@@ -87,9 +87,9 @@ class RS232{
       }; //It functions the write from the port
       void read(){
       int PROCESS_IO_DCD;
-      PROCESS_IO_DCD = digitalRead(RS232_DCD); //
+      PROCESS_IO_DCD = digitalRead(IO_MCU_RS232_DCD); //
       int PROCESS_IO_RXD;
-      PROCESS_IO_RXD = digitalRead(RS232_RXD); //
+      PROCESS_IO_RXD = digitalRead(IO_MCU_RS232_RXD); //
       int PROCESS_IO_DSR;
       int PROCESS_IO_CTS;
       int PROCESS_IO_RI;
